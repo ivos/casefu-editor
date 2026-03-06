@@ -1,0 +1,48 @@
+{
+  "name": "casefu-editor",
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivos/casefu-editor.git"
+  },
+  "author": "Ivo Maixner",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint src/ --ext .js,.vue",
+    "lint:css": "stylelint \"src/**/*.vue\" \"src/**/*.css\"",
+    "lint:md": "markdownlint \"src/**/*.md\"",
+    "lint": "npm --no-update-notifier run lint:js && npm --no-update-notifier run lint:css && npm --no-update-notifier run lint:md",
+    "lint:fix": "eslint src/ --ext .js,.vue --fix && markdownlint --fix \"src/**/*.md\" \"./*.md\" && stylelint \"src/**/*.vue\" \"src/**/*.css\" --fix",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/favicon.svg"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@vueuse/core": "^14.2.1",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "ramda": "^0.32.0",
+    "vue": "^3.5.29",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^1.0.2",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-css": "^0.12.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-vue": "^9.33.0",
+    "markdownlint-cli": "^0.48.0",
+    "stylelint": "^17.4.0",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard": "^40.0.0",
+    "vite": "^7.3.1",
+    "vite-plugin-pwa": "^1.2.0"
+  }
+}

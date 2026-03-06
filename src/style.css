@@ -1,0 +1,7 @@
+p:last-child, pre:last-child {
+  margin-bottom: 0;
+}
+
+.alert {
+  margin-bottom: 0;
+}
