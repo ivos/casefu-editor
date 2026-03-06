@@ -1,0 +1,16 @@
+### System
+.DS_Store
+
+### IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code
+.vscode/
+
+### Build
+.nvmrc
+node_modules/
+dist/
